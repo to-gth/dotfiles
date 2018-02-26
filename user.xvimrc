@@ -14,6 +14,7 @@ noremap G gg
 nnoremap cw ciw
 nnoremap dw diw
 nnoremap vw viw
+nnoremap yw yiw
 
 
 
