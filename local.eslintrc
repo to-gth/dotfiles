@@ -1,0 +1,12 @@
+{
+  "env": {
+    "jasmine": true
+  },
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "no-var": 1
+  }
+}

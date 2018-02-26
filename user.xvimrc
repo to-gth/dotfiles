@@ -1,0 +1,51 @@
+" .xvimrc
+
+
+
+" move
+
+noremap gg G
+noremap G gg
+
+
+
+" delete
+
+nnoremap cw ciw
+nnoremap dw diw
+nnoremap vw viw
+
+
+
+" yank
+
+nnoremap Y v$y
+
+
+
+" select
+
+nnoremap vv V
+nnoremap V v$
+
+
+
+" surround
+
+nnoremap <space>' gewi'<ESC>ea'<ESC>
+nnoremap <space>" gewi"<ESC>ea"<ESC>
+nnoremap <space>( gewi(<ESC>ea)<ESC>
+nnoremap <space>) gewi(<ESC>ea)<ESC>
+nnoremap <space>{ gewi{<ESC>ea}<ESC>
+nnoremap <space>} gewi{<ESC>ea}<ESC>
+nnoremap <space>[ gewi[<ESC>ea]<ESC>
+nnoremap <space>] gewi[<ESC>ea]<ESC>
+
+vnoremap ' c''<ESC>P
+vnoremap " c""<ESC>P
+vnoremap ( c()<ESC>P
+vnoremap ) c()<ESC>P
+vnoremap { c{}<ESC>P
+vnoremap } c{}<ESC>P
+vnoremap [ c[]<ESC>P
+vnoremap ] c[]<ESC>P

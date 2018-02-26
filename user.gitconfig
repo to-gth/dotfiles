@@ -1,0 +1,57 @@
+# This is Git's per-user configuration file.
+
+[user]
+	name = to-gth
+	email = to.code01.g@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore
+
+[alias]
+  # repo
+  repo-clone = clone
+  # work
+  work = checkout
+  # index
+  index = add
+  changes = status
+  summary = status -u -s
+	# undo
+  uncommit = reset --mixed HEAD~
+  recommit = commit --amend
+  decommit = revert
+  rebaseto = rebase --interactive
+	# branch
+  branches = branch -a
+  branched = checkout -b
+  rebranch = branch -m
+  debranch = branch -D
+	# remote branch
+  remotes = remote -v
+  track = branch --set-upstream-to
+  # files
+  move = mv
+  remove = rm
+  stashes = stash list
+	# log
+  commits = log --oneline
+  last = log -1 HEAD --format=format:"%Cred%H"
+  graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
+  history = log -10 --format=format:'%Cgreen%h %Creset%s (%aN, %ar)'
+  # commits info
+  tags = tag
+  what = show
+
+  # unstage = reset -q HEAD --
+  # discard = checkout --
+  # nevermind = !git reset --hard HEAD && git clean -d -f
+  # copy-last-hash = !git last | pbcopy
+  # recent-branches = branch -a --sort=committerdate
+  # prestage = diff
+  # precommit = diff --cached
+  # unmerged = branch --no-merged
+  # unstash = stash pop
+  # untrack = rm -r --cached
+  # file-trail = log --follow -p -w
+  # merge-trail = log --ancestry-path --merges
+  # unmerged = diff --name-only --diff-filter=U
