@@ -9,23 +9,27 @@
 
 [alias]
   # repo
-  repo-clone = clone
-  # work
+  clone-repo = clone
+  # head downto work
   work = checkout
-  # index
+  # work upto index
   index = add
   changes = status
-  summary = status -u -s
-	# undo
-  uncommit = reset --mixed HEAD~
-  recommit = commit --amend
-  decommit = revert
-  rebaseto = rebase --interactive
+  # index upto head
+  up = commit
+  adup = commit --amend
+  fixup = revert
+	# move head
+  head-to = merge
+  head-back = reset --mixed HEAD~
+  rebase-to = rebase --interactive
 	# branch
   branches = branch -a
   branched = checkout -b
   rebranch = branch -m
   debranch = branch -D
+  merge-to = merge
+  mergeto = merge
 	# remote branch
   remotes = remote -v
   track = branch --set-upstream-to
@@ -35,12 +39,18 @@
   stashes = stash list
 	# log
   commits = log --oneline
-  last = log -1 HEAD --format=format:"%Cred%H"
   graph = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
+  gr = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
   history = log -10 --format=format:'%Cgreen%h %Creset%s (%aN, %ar)'
+  last = log -1 HEAD --format=format:"%Cred%H"
+  headlog = reflog
   # commits info
   tags = tag
   what = show
+
+
+# --(2 hyphens) is
+# a separator that leads filename (even if it seems like an option)
 
   # unstage = reset -q HEAD --
   # discard = checkout --
@@ -55,3 +65,4 @@
   # file-trail = log --follow -p -w
   # merge-trail = log --ancestry-path --merges
   # unmerged = diff --name-only --diff-filter=U
+
