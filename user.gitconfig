@@ -12,6 +12,7 @@
   clone-repo = clone
   # head downto work
   work = checkout
+  discard = checkout --
   # work upto index
   index = add
   changes = status
@@ -36,6 +37,10 @@
   # files
   move = mv
   remove = rm
+  wouldclean = clean -n
+  clean-untracked = clean -d -f
+  retry = reset --hard HEAD
+  # stash
   stashes = stash list
 	# log
   commits = log --oneline
@@ -53,7 +58,6 @@
 # a separator that leads filename (even if it seems like an option)
 
   # unstage = reset -q HEAD --
-  # discard = checkout --
   # nevermind = !git reset --hard HEAD && git clean -d -f
   # copy-last-hash = !git last | pbcopy
   # recent-branches = branch -a --sort=committerdate
