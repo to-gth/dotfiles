@@ -1,0 +1,12 @@
+
+
+
+symbolic link:
+ln -s ~/Dropbox/dotfiles/user.vimrc ~/.vimrc
+
+
+
+gitconfig for whole system is should be placed on:
+/usr/local/git/etc/gitconfig
+
+
