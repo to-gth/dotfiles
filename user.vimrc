@@ -112,3 +112,9 @@ set nowrap
 "        echomsg 'Please execute ":NeoBundleInstall" command.'
 "        "finish
 "end
+
+
+
+
+"i_<C-y> : Insert the character which is above the cursor
+"i_<C-e> : Insert the character which is below the cursor
