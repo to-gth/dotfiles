@@ -32,6 +32,12 @@
       "error",
       "always-multiline"
     ],
-    "no-unexpected-multiline": "error"
+    "no-unexpected-multiline": "error",
+    
+    "no-duplicate-imports": "error",
+    "sort-imports": "error",
+    "eol-last": "error",
+    "no-trailing-spaces": "error",
+    "no-var": "error"
   }
 }
