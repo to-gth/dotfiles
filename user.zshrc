@@ -12,7 +12,7 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
 
-# vim 風キーバインドにする
+# emacs 風キーバインドにする
 # bindkey -v
 
 # ヒストリの設定
