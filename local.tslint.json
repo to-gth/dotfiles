@@ -9,14 +9,16 @@
     ]
   },
   "rules": {
-    "no-namespace": false,
-    "semicolon": [true, "never"],
-    "no-shadowed-variable": false,
-    "quotemark": [true, "single"],
+    "array-type": [true, "array"],
+    "curly": [true, "ignore-same-line"],
     "indent": [true, "spaces", 2],
     "interface-name": false,
-    "ordered-imports": false,
+    "no-consecutive-blank-lines": false,
+    "no-namespace": false,
+    "no-shadowed-variable": false,
     "object-literal-sort-keys": false,
-    "no-consecutive-blank-lines": false
+    "ordered-imports": false,
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"]
   }
 }
