@@ -10,34 +10,39 @@
     "sourceType": "module"
   },
   "rules": {
-    "indent": [
-      "error",
-      2
-    ],
+
+    // good.practice
     "linebreak-style": [
       "error",
       "unix"
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "no-var": "error",
+    "no-unexpected-multiline": "error",
+
+    // syntax.preference
     "semi": [
       "error",
       "never", {
         "beforeStatementContinuationChars": "always"
       }
     ],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "comma-dangle": [
       "error",
       "always-multiline"
     ],
-    "no-unexpected-multiline": "error",
-    
+
+    // beautify
+    "indent": [
+      "error",
+      2
+    ],
+    "no-trailing-spaces": "error",
     "no-duplicate-imports": "error",
     "sort-imports": "error",
-    "eol-last": "error",
-    "no-trailing-spaces": "error",
-    "no-var": "error"
+    "eol-last": "error"
   }
 }
